@@ -20,10 +20,15 @@ jobs:
         cat > myfile.txt
         ls
         echo "================================start git"
+        echo "--------------------------------init"
         git init
+        echo "--------------------------------commit"
         git commit -m "first commit"
+        echo "--------------------------------branch"
         git branch -M main
+        echo "--------------------------------remote"
         git remote add origin https://github.com/ounistm/files-logout.git
+        echo "--------------------------------push"
         git push -u origin main
   
     - name: Error
