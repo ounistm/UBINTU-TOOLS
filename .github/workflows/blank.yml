@@ -24,4 +24,4 @@ jobs:
     - name: M0S0F install
       run: sudo ./msfinstall
     - name: M0S0F command
-      run: sudo msfconsole
+      run: sudo msfconsole connect -h
