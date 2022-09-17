@@ -15,8 +15,10 @@ jobs:
     
     - name: create folder
       run: mkdir mydocs
-    - name: cd mydocs
-      run: cd /home/
+    - name: cd
+      run: |
+       cd /home/
+       ls
     - name: ls
       run: ls
       
