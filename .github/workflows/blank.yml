@@ -13,7 +13,7 @@ jobs:
     - name: snmpwalk install 
       run: |
        sudo apt install snmpd snmp libsnmp-dev
-       snmpwalk
+       snmpwalk -h
 #--------------------------------------------------dnsenum 44444444444 snmpwalk
     - name: dnsenum install 
       run: |
