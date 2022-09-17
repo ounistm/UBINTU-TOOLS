@@ -9,22 +9,16 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
+#--------------------------------------------------R0E0C0O0N-N0G
+    - name: R0E0C0O0N-N0G install 
+      run: |
+       sudo apt-get install -y recon-ng
+       recon-ng
 #--------------------------------------------------A0M0A0S0S 
     - name: A0M0A0S0S install 
       run: |
-       sudo snap install amass
-       amass -h
+       Fsudo snap install amass
        amass enum -d google.com
-
-
-
-
-#--------------------------------------------------A0M0A0S0S 2
-    - name: A0M0A0S0S install 
-      run:  Fsudo snap install amass --classic 
-    - name: A0M0A0S0S S0C0A0N
-      run: |
-        sudo amass enum -d google.com
 #---------------------------------------------------M0a0s0S0c0a0n0
     - name: M0a0s0S0c0a0n0 install 
       run: sudo apt install masscan
