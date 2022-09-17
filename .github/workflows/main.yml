@@ -23,7 +23,7 @@ jobs:
         echo "--------------------------------init"
         git init
         echo "--------------------------------commit"
-        git commit -m "first commit"
+        #git commit -m "first commit"
         echo "--------------------------------branch"
         git branch -M main
         echo "--------------------------------remote"
