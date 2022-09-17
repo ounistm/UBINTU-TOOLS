@@ -14,7 +14,8 @@ jobs:
       run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
     - name: dir 
       run: |
-       cd C:\
+       cd "C:\Tools"
+       ls
        dir
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
