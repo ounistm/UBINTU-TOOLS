@@ -11,7 +11,7 @@ jobs:
       run: sudo apt update
 #--------------------------------------------------A0M0A0S0S
     - name: A0M0A0S0S install 
-      run: sudo apt install amass
+      run: sudo snap install amass
     - name: A0M0A0S0S S0C0A0N
       run: |
         sudo amass
