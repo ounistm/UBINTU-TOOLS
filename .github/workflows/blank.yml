@@ -9,11 +9,6 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
-#--------------------------------------------------snmpwalk test
-    - name: snmpwalk install 
-      run: |
-       run: .github/workflows/snmpwalk.yml
-       
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
