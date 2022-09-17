@@ -15,8 +15,8 @@ jobs:
     - name: dir 
       run: |
        ls -l
-       cd /home/
-       ls -l
+    #   cd /home/
+    #   ls -l
        
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
