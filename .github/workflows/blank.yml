@@ -15,7 +15,9 @@ jobs:
       run: sudo apt install nmap
       
     - name: N0M0A0P S0C0A0N
-      run: nmap 78.140.129.90
+      run: |
+       nmap -sU -sT -p-65535 alexchanger.com
+       nmap --script "safe" -p- alexchanger.com
    #---------------------------------------------------M0S0F
     - name: M0S0F Download 
       run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
