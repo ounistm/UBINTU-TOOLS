@@ -12,10 +12,11 @@ jobs:
 #--------------------------------------------------commands
     - name: download msf 
       run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-    - name: dir 
-      run: |        
-       cat > filename.txt
-       ls -l
+    - name: create file
+      run: cat > filename.txt    
+    - name: Dir
+      run: ls -l  
+      
       
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
