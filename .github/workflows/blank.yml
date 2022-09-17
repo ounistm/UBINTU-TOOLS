@@ -9,16 +9,19 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
-#--------------------------------------------------A0M0A0S0S
+
+#--------------------------------------------------A0M0A0S0S 2
     - name: A0M0A0S0S install 
-      run: sudo snap install amass
+      run:  sudo snap install amass
     - name: A0M0A0S0S S0C0A0N
       run: |
-        sudo chown -R $USER.$USER $HOME/snap
+        export PATH=$PATH:/snap/bin
+        sudo snap refresh
+        
         sudo amass enum -d google.com
 #---------------------------------------------------M0a0s0S0c0a0n0
     - name: M0a0s0S0c0a0n0 install 
-      run: Fsudo apt install masscan
+      run: sudo apt install masscan
     - name: M0a0s0S0c0a0n0 S0C0A0N
       run: |
         sudo masscan --max-rate 10000000 -p 80 10.0.0.0-20.0.0.0 |grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
