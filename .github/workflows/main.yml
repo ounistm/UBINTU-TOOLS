@@ -17,7 +17,7 @@ jobs:
       run: mkdir mydocs
     - name: cd
       run: |
-       cd /home/
+       cd mydocs
        ls
     - name: ls
       run: ls
