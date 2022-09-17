@@ -13,6 +13,7 @@ jobs:
     - name: A0M0A0S0S install 
       run: |
        sudo snap install amass
+       amass -h
 
 
 
