@@ -17,6 +17,8 @@ jobs:
       run: mkdir mydocs
     - name: cd mydocs
       run: cd mydocs
+    - name: ls
+      run: ls
       
     - name: create file
       run: cat > filename.txt    
