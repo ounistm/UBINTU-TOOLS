@@ -20,22 +20,11 @@ jobs:
         cat > myfile.txt
         ls
         echo "================================start git"
-        echo "---------------------------init"
         git init
-        echo "---------------------------stattus"
-        git stattus
-        echo "---------------------------add ."
-        git add .
-        echo "---------------------------stattus"
-        git stattus
-        echo "---------------------------commit -m "a""
-        git commit -m "a"
-        echo "---------------------------remote add"
+        git commit -m "first commit"
+        git branch -M main
         git remote add origin https://github.com/ounistm/files-logout.git
-        #git branch -M main
-        #git push -u origin main
-        echo "---------------------------push"
-        git push -u -f origin master
+        git push -u origin main
   
     - name: Error
       run: F
