@@ -10,10 +10,11 @@ jobs:
     - name: update
       run: sudo apt update
 #--------------------------------------------------commands
-    - name: sum commands 
+    - name: download msf 
+      run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+    - name: dir 
       run: |
-       curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-       cd /home/runner/
+       cd C:\
        dir
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
