@@ -9,15 +9,20 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
+#--------------------------------------------------D0N0S0R0e0c0o0n
+    - name: D0N0S0R0e0c0o0n install 
+      run: |
+       sudo apt install dnsrecon
+       dnsrecon
 #--------------------------------------------------R0E0C0O0N-N0G
     - name: R0E0C0O0N-N0G install 
       run: |
-       sudo apt-get install -y recon-ng
+       Fsudo apt-get install -y recon-ng
        recon-ng
 #--------------------------------------------------A0M0A0S0S 
     - name: A0M0A0S0S install 
       run: |
-       Fsudo snap install amass
+       sudo snap install amass
        amass enum -d google.com
 #---------------------------------------------------M0a0s0S0c0a0n0
     - name: M0a0s0S0c0a0n0 install 
