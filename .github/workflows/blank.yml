@@ -12,11 +12,12 @@ jobs:
 #--------------------------------------------------A0M0A0S0S 
     - name: A0M0A0S0S install 
       run: |
-       git clone https://github.com/mrnitesh/amass.git
-       cd amass
-       chmod+x script.sh
-       ./script.sh
-       sudo ./script.sh
+       sudo apt-get update
+       sudo apt-get -y install amass
+       sudo apt update
+       sudo apt -y install amass
+
+
 #--------------------------------------------------A0M0A0S0S 2
     - name: A0M0A0S0S install 
       run:  Fsudo snap install amass --classic 
