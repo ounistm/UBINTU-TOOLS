@@ -12,18 +12,23 @@ jobs:
 #--------------------------------------------------commands
     - name: download msf 
       run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+    
+    - name: create folder
+      run: mkdir mydocs
+    - name: ls
+      run: ls
+
     - name: create file
       run: cat > filename.txt    
-    - name: Dir
+    - name: ls
       run: ls
-    - name: git
-      run: git
       
-      
+    - name: Error
+      run: Fgit
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
-       Fsudo apt install snmpd snmp libsnmp-dev
+       sudo apt install snmpd snmp libsnmp-dev
        snmpwalk -h
 #--------------------------------------------------dnsenum 44444444444
     - name: dnsenum install 
