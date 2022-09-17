@@ -20,8 +20,8 @@ jobs:
         echo "================================start git"
         echo "--------------------------init"
         git init
-        echo "--------------------------add README.md"
-        git add README.md
+        echo "--------------------------add myfile.txt"
+        git add myfile.txt
         echo "--------------------------commit"
         git commit -m "TEST"
         echo "--------------------------remote"
