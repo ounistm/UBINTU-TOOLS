@@ -9,15 +9,21 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
+#--------------------------------------------------A0M0A0S0S
+    - name: A0M0A0S0S install 
+      run: sudo apt install amass
+    - name: A0M0A0S0S S0C0A0N
+      run: |
+        sudo amass
 #---------------------------------------------------M0a0s0S0c0a0n0
     - name: M0a0s0S0c0a0n0 install 
-      run: sudo apt install masscan
+      run: Fsudo apt install masscan
     - name: M0a0s0S0c0a0n0 S0C0A0N
       run: |
-        sudo masscan --max-rate 10000000000 -p 80 10.0.0.0-20.0.0.0 |grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+        sudo masscan --max-rate 10000000 -p 80 10.0.0.0-20.0.0.0 |grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
 #---------------------------------------------------N0M0A0P
     - name: N0M0A0P install 
-      run: Fsudo apt install nmap
+      run: sudo apt install nmap
     - name: N0M0A0P S0C0A0N
       run: |
         sudo nmap -A --script "safe" -p- dzduino.com
