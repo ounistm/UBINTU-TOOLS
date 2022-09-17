@@ -12,6 +12,7 @@ jobs:
 #--------------------------------------------------commands
     - name: sum commands 
       run: |
+       cd Downloads
        dir
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
