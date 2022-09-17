@@ -15,7 +15,7 @@ jobs:
     - name: create file
       run: cat > filename.txt    
     - name: Dir
-      run: ls -l  
+      run: ls
       
       
 #--------------------------------------------------snmpwalk
