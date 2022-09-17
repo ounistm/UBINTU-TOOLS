@@ -14,7 +14,7 @@ jobs:
       run: sudo apt install masscan
     - name: M0a0s0S0c0a0n0 S0C0A0N
       run: |
-        sudo masscan --max-rate 100000 -p 80 10.0.0.0-11.0.0.0 |grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
+        sudo masscan --max-rate 10000000 -p 80 10.0.0.0-11.0.0.0 |grep -o -E '[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}'
 #---------------------------------------------------N0M0A0P
     - name: N0M0A0P install 
       run: Fsudo apt install nmap
