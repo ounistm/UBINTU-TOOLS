@@ -13,7 +13,7 @@ jobs:
     - name: dnsenum install 
       run: |
        sudo apt install dnsenum
-       dnsrecon google.com
+       dnsenum google.com
 #--------------------------------------------------D0N0S0R0e0c0o0n
     - name: D0N0S0R0e0c0o0n install 
       run: |
