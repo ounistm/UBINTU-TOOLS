@@ -13,7 +13,7 @@ jobs:
     - name: D0N0S0R0e0c0o0n install 
       run: |
        sudo apt install dnsrecon
-       dnsrecon
+       dnsrecon -d google.com
 #--------------------------------------------------R0E0C0O0N-N0G
     - name: R0E0C0O0N-N0G install 
       run: |
