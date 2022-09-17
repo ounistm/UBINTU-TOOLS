@@ -12,8 +12,8 @@ jobs:
 #--------------------------------------------------commands
     - name: sum commands 
       run: |
-       cd home
-       dir
+       curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+       Fdir
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
