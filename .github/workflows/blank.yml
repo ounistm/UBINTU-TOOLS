@@ -16,12 +16,13 @@ jobs:
       
     - name: N0M0A0P S0C0A0N
       run: |
-       sudo nmap -A alexchanger.com   #=>Detect OS and services
+        sudo nmap -A --script "safe" -p- dzduino.com
+ #      sudo nmap -A alexchanger.com   #=>Detect OS and services
  #      sudo nmap -sU -sT -p-65535 alexchanger.com
- #      sudo nmap --script "safe" -p- alexchanger.com
+        
    #---------------------------------------------------M0S0F
     - name: M0S0F Download 
-      run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+      run: Fcurl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
     - name: M0S0F permition
       run: sudo chmod 755 msfinstall
     - name: M0S0F install
