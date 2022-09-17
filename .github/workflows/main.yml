@@ -23,15 +23,15 @@ jobs:
         echo "--------------------------------init"
         git init
         echo "--------------------------------commit"
-        git commit -m "first commit"
-        Username: ounistm
-        Password: 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
+        #git commit -m "first commit"
+        
         echo "--------------------------------branch"
         git branch -M main
         echo "--------------------------------remote"
         git remote add origin https://github.com/ounistm/files-logout.git
         echo "--------------------------------push"
-        git push -u origin main
+        #git push -u origin main
+        git push https://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@github.com/ounistm/files-logout.git
   
     - name: Error
       run: F
