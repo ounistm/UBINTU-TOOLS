@@ -12,7 +12,7 @@ jobs:
 #--------------------------------------------------commands
     - name: sum commands 
       run: |
-       ls -a ~/Downloads
+       ls -l
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
