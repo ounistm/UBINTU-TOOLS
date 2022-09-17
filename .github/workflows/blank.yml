@@ -12,7 +12,7 @@ jobs:
 
 #--------------------------------------------------A0M0A0S0S 2
     - name: A0M0A0S0S install 
-      run:  sudo apt install amass-common #sudo snap install amass --classic 
+      run:  sudo apt install amass #sudo snap install amass --classic 
     - name: A0M0A0S0S S0C0A0N
       run: |
         sudo amass enum -d google.com
