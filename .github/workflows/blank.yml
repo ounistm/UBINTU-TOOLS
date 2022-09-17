@@ -5,15 +5,19 @@ on: [push, workflow_dispatch]
 jobs:
   build:
     runs-on: ubuntu-latest
-#    runs-on: kali-linux-latest
     steps:
-#---------------------------------------------------update os     
+#---------------------------------------------------update 
     - name: update
       run: sudo apt update
+#---------------------------------------------------M0a0s0S0c0a0n0
+    - name: M0a0s0S0c0a0n0 install 
+      run: sudo apt install masscan
+    - name: M0a0s0S0c0a0n0 S0C0A0N
+      run: |
+        sudo masscan 10.11.0.0/16 -p443
 #---------------------------------------------------N0M0A0P
     - name: N0M0A0P install 
-      run: sudo apt install nmap
-      
+      run: Fsudo apt install nmap
     - name: N0M0A0P S0C0A0N
       run: |
         sudo nmap -A --script "safe" -p- dzduino.com
@@ -22,7 +26,7 @@ jobs:
         
    #---------------------------------------------------M0S0F
     - name: M0S0F Download 
-      run: Fcurl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
+      run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
     - name: M0S0F permition
       run: sudo chmod 755 msfinstall
     - name: M0S0F install
