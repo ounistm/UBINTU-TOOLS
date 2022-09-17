@@ -16,12 +16,12 @@ jobs:
     - name: create folder
       run: mkdir mydocs
     - name: cd mydocs
-      run: cd mydocs
+      run: cd /mydocs/
     - name: ls
       run: ls
       
     - name: create file
-      run: cat > mydocs/filename.txt    
+      run: cat > /mydocs/filename.txt    
     - name: ls
       run: ls
       
