@@ -15,20 +15,16 @@ jobs:
     
     - name: create folder
       run: mkdir mydocs
-    - name: cd
+    - name: cd mydocs + create file
       run: |
        cd mydocs
        ls
-    - name: ls
-      run: ls
-      
-    - name: create file
-      run: Fcat > /mydocs/filename.txt    
-    - name: ls
-      run: ls
-      
+       echo "-----------------------------"
+       cat > filename.txt
+       echo "-----------------------------"
+       ls      
     - name: Error
-      run: Fgit
+      run: F
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
