@@ -9,15 +9,20 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
+#--------------------------------------------------snmpwalk test
+    - name: snmpwalk install 
+      run: |
+       run: .github/workflows/snmpwalk.yml
+       
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
-       sudo apt install snmpd snmp libsnmp-dev
+       Fsudo apt install snmpd snmp libsnmp-dev
        snmpwalk -h
 #--------------------------------------------------dnsenum 44444444444 snmpwalk
     - name: dnsenum install 
       run: |
-       Fsudo apt install dnsenum
+       sudo apt install dnsenum
        dnsenum google.com
 #--------------------------------------------------D0N0S0R0e0c0o0n
     - name: D0N0S0R0e0c0o0n install 
