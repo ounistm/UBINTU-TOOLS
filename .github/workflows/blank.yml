@@ -14,7 +14,8 @@ jobs:
       run: sudo snap install amass
     - name: A0M0A0S0S S0C0A0N
       run: |
-        sudo amass enum -d google.com -dir
+        sudo chown -R $USER.$USER $HOME/snap
+        sudo amass enum -d google.com
 #---------------------------------------------------M0a0s0S0c0a0n0
     - name: M0a0s0S0c0a0n0 install 
       run: Fsudo apt install masscan
