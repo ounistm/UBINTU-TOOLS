@@ -14,8 +14,6 @@ jobs:
       run: |
        sudo apt-get update
        sudo apt-get install aptitude
-       
-       sudo aptitude update
        sudo aptitude -y install amass
 
 
