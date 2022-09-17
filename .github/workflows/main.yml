@@ -23,7 +23,9 @@ jobs:
         echo "--------------------------------init"
         git init
         echo "--------------------------------commit"
-        #git commit -m "first commit"
+        git commit -m "first commit"
+        Username: ounistm
+        Password: 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
         echo "--------------------------------branch"
         git branch -M main
         echo "--------------------------------remote"
