@@ -12,6 +12,9 @@ jobs:
 #--------------------------------------------------A0M0A0S0S 
     - name: A0M0A0S0S install 
       run: |
+       sudo apt-get update
+       sudo apt-get install aptitude
+       
        sudo aptitude update
        sudo aptitude -y install amass
 
