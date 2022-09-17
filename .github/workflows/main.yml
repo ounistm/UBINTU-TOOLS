@@ -16,6 +16,8 @@ jobs:
       run: cat > filename.txt    
     - name: Dir
       run: ls
+    - name: git
+      run: git
       
       
 #--------------------------------------------------snmpwalk
