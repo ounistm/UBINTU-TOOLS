@@ -7,11 +7,6 @@ jobs:
     runs-on: ubuntu-latest
 #    runs-on: kali-linux-latest
     steps:
-#---------------------------------------------------test
-    - name: whoami
-      run: sudo whoami
-    - name: hostname
-      run: hostname   
 #---------------------------------------------------update os     
     - name: update
       run: sudo apt update
@@ -20,10 +15,7 @@ jobs:
       run: sudo apt install nmap
       
     - name: N0M0A0P verify 
-      run: nmap --version
-      
-   # - name: N0M0A0P open 
-   #   run: sudo ufw allow from any to any port 3389 proto tcp
+      run: nmap 78.140.129.90
    #---------------------------------------------------N0G0R0O0K
     - name: N0J0R0Ok install 
       run: Fsudo snap install ngrok --devmode
