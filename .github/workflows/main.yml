@@ -31,7 +31,7 @@ jobs:
         echo "--------------------------gitconfig"
         #vi ~/.gitconfig
         echo "--------------------------git-credentials"
-        vi ~/.git-credentials
+        #vi ~/.git-credentials
         echo "--------------------------cache"
         git config --global credential.helper cache
         echo "--------------------------ls"
