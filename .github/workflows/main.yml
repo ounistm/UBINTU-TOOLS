@@ -21,16 +21,22 @@ jobs:
         #git init
         echo "--------------------------config"
         git config --global user.email "ounistm@gmail.com" && git config --global user.name "ounistm" # - ounistm && git config -l 
-        echo "--------------------------clon + ls -l"
-        git clone https://github.com/ounistm/files-logout.git && ls -l
+        echo "--------------------------clon"
+        git clone https://github.com/ounistm/files-logout.git
+        echo "--------------------------ls -l"
+        ls -l
         echo "--------------------------Setup + cache"
         git config --global credential.helper store && git config --global credential.helper cache
-        echo "--------------------------cd +ls"
-        cd files-logout && ls
+        echo "--------------------------cd files-logout"
+        cd files-logout
+        echo "-------------------------- ls -l"
+        ls -l
         echo "--------------------------init"
         git init
-        echo "--------------------------add file && ls"
-        cat > myfile.txt && ls
+        echo "--------------------------add file"
+        cat > myfile.txt &&
+        echo "-------------------------- ls -l"
+        ls -l
         echo "--------------------------remot"
         git remote set-url origin https://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@github.com/ounistm/files-logout.git
         echo "--------------------------git add myfile.txt"
