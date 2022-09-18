@@ -26,7 +26,7 @@ jobs:
         git config --global user.name "ounistm ounistm"
         echo "--------------------------add myfile.txt"
         git add myfile.txt
-        echo "--------------------------commit"          4444444444444444 hna el mechkal
+        echo "--------------------------commit"
         git commit -m "TEST"
         echo "--------------------------remote"
         git remote add origin https://github.com/ounistm/files-logout.git
