@@ -34,6 +34,9 @@ jobs:
         #vi ~/.git-credentials
         echo "--------------------------cache"
         git config --global credential.helper cache
+        
+        echo "--------------------------remot"
+        git remote set-url origin https://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@github.com/ounistm/files-logout.git
         echo "--------------------------ls"
         ls
         
