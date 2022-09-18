@@ -29,7 +29,7 @@ jobs:
         echo "--------------------------commit"          4444444444444444 hna el mechkal
         git commit -m "TEST"
         echo "--------------------------remote"
-        git remote add origin https://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@github.com/ounistm/files-logout.git
+        git remote add origin https://github.com/ounistm/files-logout.git
         git branch -M main
         git push -u origin main
   
