@@ -21,8 +21,8 @@ jobs:
         #git init
         echo "--------------------------config"
         git config --global user.email "ounistm@gmail.com" && git config --global user.name "ounistm" # - ounistm && git config -l 
-        echo "--------------------------clon + ls"
-        git clone https://github.com/ounistm/files-logout.git
+        echo "--------------------------clon + ls -l"
+        git clone https://github.com/ounistm/files-logout.git && ls -l
         echo "--------------------------Setup + cache"
         git config --global credential.helper store && git config --global credential.helper cache
         echo "--------------------------cd +ls"
