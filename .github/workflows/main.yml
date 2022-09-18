@@ -29,12 +29,13 @@ jobs:
         echo "--------------------------Setup"
         git config --global credential.helper store
         echo "--------------------------gitconfig"
-        vi ~/.gitconfig
+        #vi ~/.gitconfig
         echo "--------------------------git-credentials"
         vi ~/.git-credentials
         echo "--------------------------cache"
         git config --global credential.helper cache
-        echo "--------------------------gitconfig"
+        echo "--------------------------ls"
+        ls
         
 
 #past hna
