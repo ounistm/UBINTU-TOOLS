@@ -16,7 +16,7 @@ jobs:
       run: |
         sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com   
     - name: read nmap result
-        cat nmap.txt
+      run: cat nmap.txt
     - name: Error
       run: F
 #--------------------------------------------------snmpwalk
