@@ -38,7 +38,7 @@ jobs:
         echo "-------------------------- ls -a"
         ls -a
         echo "--------------------------remot"
-        git remote add origin https://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@github.com/ounistm/files-logout.git
+        #git remote add origin https://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@github.com/ounistm/files-logout.git
         echo "--------------------------git add myfile.txt"
         git add myfile.txt
         echo "--------------------------commit"
