@@ -32,7 +32,7 @@ jobs:
         echo "-------------------------- ls -a"
         ls -a
         echo "--------------------------init"
-        git init
+        #git init
         echo "--------------------------add file"
         cat > myfile.txt
         echo "-------------------------- ls -a"
