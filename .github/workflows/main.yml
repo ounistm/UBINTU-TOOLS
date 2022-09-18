@@ -46,7 +46,8 @@ jobs:
         echo "--------------------------branch"
         git branch -M main
         echo "--------------------------puch"
-        git push -u origin main
+        #git push -u origin main
+        git push https://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@github.com/ounistm/files-logout.git
         echo "--------------------------final ls"
         ls
         
