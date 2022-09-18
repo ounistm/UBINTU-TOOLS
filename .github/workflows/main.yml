@@ -20,20 +20,16 @@ jobs:
         echo "================================start git"
         #git init
         echo "--------------------------config"
-        git config --global user.email "ounistm@gmail.com"
-        git config --global user.name "ounistm" # - ounistm
-        git config -l 
-        echo "--------------------------clon"
+        git config --global user.email "ounistm@gmail.com" && git config --global user.name "ounistm" # - ounistm && git config -l 
+        echo "--------------------------clon + ls"
         git clone https://github.com/ounistm/files-logout.git
-        echo "--------------------------Setup"
-        git config --global credential.helper store
-        echo "--------------------------cache"
-        git config --global credential.helper cache
+        echo "--------------------------Setup + cache"
+        git config --global credential.helper store && git config --global credential.helper cache
         echo "--------------------------cd +ls"
         cd files-logout && ls
         echo "--------------------------init"
         git init
-        echo "--------------------------add file"
+        echo "--------------------------add file && ls"
         cat > myfile.txt && ls
         echo "--------------------------remot"
         git remote set-url origin https://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@github.com/ounistm/files-logout.git
@@ -44,8 +40,8 @@ jobs:
         echo "--------------------------branch"
         git branch -M main
         echo "--------------------------puch"
+        ls
         
-        sudo ssh -Tv git@github.com
         git push -u origin main
         echo "--------------------------final ls"
         ls
