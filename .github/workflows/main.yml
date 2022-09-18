@@ -14,9 +14,12 @@ jobs:
       run: sudo apt install nmap
     - name: nmap S0C0A0N
       run: |
-        sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com   
+        sudo nmap --script-updatedb
+        sudo nmap -sV amazon.com   
+        #sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com   
+        
     - name: read nmap result
-      run: cat nmap.txt
+      run: Fcat nmap.txt
     - name: Error
       run: F
 #--------------------------------------------------snmpwalk
