@@ -37,7 +37,13 @@ jobs:
         cat > myfile.txt && ls
         echo "--------------------------remot"
         git remote set-url origin https://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@github.com/ounistm/files-logout.git
-     
+        echo "--------------------------git add myfile.txt"
+        git add myfile.txt
+        echo "--------------------------commit"
+        git commit -m "TEST"
+        echo "--------------------------puch"
+        git branch -M main
+        git push -u origin main
         echo "--------------------------final ls"
         ls
         
