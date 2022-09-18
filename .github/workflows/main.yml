@@ -29,14 +29,14 @@ jobs:
         git config --global credential.helper store && git config --global credential.helper cache
         echo "--------------------------cd files-logout"
         cd files-logout
-        echo "-------------------------- ls -l"
-        ls -l
+        echo "-------------------------- ls -a"
+        ls -a
         echo "--------------------------init"
         git init
         echo "--------------------------add file"
-        cat > myfile.txt &&
-        echo "-------------------------- ls -l"
-        ls -l
+        cat > myfile.txt
+        echo "-------------------------- ls -a"
+        ls -a
         echo "--------------------------remot"
         git remote set-url origin https://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@github.com/ounistm/files-logout.git
         echo "--------------------------git add myfile.txt"
