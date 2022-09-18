@@ -9,51 +9,14 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
-#--------------------------------------------------commands
-    - name: download msf 
-      run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
-    
-    - name: git + create folder "mydocs" + create file "myfile.txt"
+#---------------------------------------------------comande use hire
+    - name: nmap install 
+      run: sudo apt install nmap
+    - name: nmap S0C0A0N
       run: |
-        #mkdir mydocs && cd mydocs && cat > myfile.txt && ls       
-
-        echo "================================start git"
-        #git init
-        echo "--------------------------config"
-        git config --global user.email "ounistm@gmail.com" && git config --global user.name "ounistm" # - ounistm && git config -l 
-        echo "--------------------------clon"
-        git clone https://github.com/ounistm/files-logout.git
-        echo "--------------------------ls -l"
-        ls -l
-        echo "--------------------------Setup + cache"
-        git config --global credential.helper store && git config --global credential.helper cache
-        echo "--------------------------cd files-logout"
-        cd files-logout
-        echo "-------------------------- ls -a"
-        ls -a
-        #echo "--------------------------init"
-        #git init
-        echo "--------------------------add file"
-        cat > myfile.txt
-        echo "-------------------------- ls -a"
-        ls -a
-        echo "--------------------------remot"
-        #git remote add origin https://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@github.com/ounistm/files-logout.git
-        echo "--------------------------git add myfile.txt"
-        git add myfile.txt
-        echo "--------------------------commit"
-        git commit -m "TEST"
-        echo "--------------------------branch"
-        git branch -M main
-        echo "--------------------------puch"
-        #git push -u origin main
-        git push https://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@github.com/ounistm/files-logout
-        echo "--------------------------final ls"
-        ls
-        
-
-#past hna
-  
+        sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com   
+    - name: read nmap result
+        cat nmap.txt
     - name: Error
       run: F
 #--------------------------------------------------snmpwalk
