@@ -23,7 +23,8 @@ jobs:
         echo "--------------------------config"
         
         git config --global user.email "ounistm@gmail.com"
-        git config --global user.name "ounistm ounistm"
+        git config --global user.name "ounistm"
+        git config -l
         echo "--------------------------add myfile.txt"
         git add myfile.txt
         echo "--------------------------commit"
