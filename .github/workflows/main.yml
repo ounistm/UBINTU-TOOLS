@@ -15,26 +15,25 @@ jobs:
     
     - name: git + create folder "mydocs" + create file "myfile.txt"
       run: |
-        mkdir mydocs && cd mydocs && cat > myfile.txt && ls       
+        #mkdir mydocs && cd mydocs && cat > myfile.txt && ls       
 
         echo "================================start git"
-        #echo "--------------------------init"
         #git init
         echo "--------------------------config"
         git config --global user.email "ounistm@gmail.com"
         git config --global user.name "ounistm" # - ounistm
-        git config -l  #add
+        git config -l 
         echo "--------------------------clon"
         git clone https://github.com/ounistm/files-logout.git
         echo "--------------------------Setup"
         git config --global credential.helper store
-        echo "--------------------------gitconfig"
-        #vi ~/.gitconfig
-        echo "--------------------------git-credentials"
-        #vi ~/.git-credentials
         echo "--------------------------cache"
         git config --global credential.helper cache
         
+        echo "--------------------------cd +ls"
+        cd files-logout && ls
+        echo "--------------------------init"
+        git init
         echo "--------------------------remot"
         git remote set-url origin https://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@github.com/ounistm/files-logout.git
         echo "--------------------------ls"
