@@ -10,14 +10,39 @@ jobs:
     - name: update
       run: sudo apt update
       
-#---------------------------------------------------comande use hire
+#---------------------------------------------------code example hire
+    - name: nmap install 
+      run: sudo apt install nmap
+    - name: nmap api.amazonalexa.com
+      run: sudo nmap --script=all api.amazonalexa.com
+    - name: nmap developer.amazon.com
+      run: sudo nmap --script=all developer.amazon.com
+    - name: nmap alexa.amazon.com
+      run: sudo nmap --script=all alexa.amazon.com
+    - name: nmap skills-store.amazon.com
+      run: sudo nmap --script=all skills-store.amazon.com    
+    - name: nmap read.amazon.com
+      run: sudo nmap --script=all read.amazon.com 
+    - name: nmap alexaanswers.amazon.com
+      run: sudo nmap --script=all alexaanswers.amazon.com 
+    - name: nmap blueprints.amazon.com
+      run: sudo nmap --script=all blueprints.amazon.com
+    - name: nmap creator.amazon.com
+      run: sudo nmap --script=all creator.amazon.com
+    - name: nmap amazon.com
+      run: sudo nmap --script=all amazon.com
+    - name: nmap a4k.amaazon.com
+      run: sudo nmap --script=all a4k.amaazon.com
+
+      
+    - name: Error
+      run: F  
+#---------------------------------------------------nikto
     - name: nikto install 
       run: sudo apt install nikto
     - name: nikto scan
       run: |
        nikto -h alexchanger.com
-    - name: Error
-      run: F
 #--------------------------------------------------snmpwalk
     - name: snmpwalk install 
       run: |
