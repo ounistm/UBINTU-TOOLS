@@ -10,12 +10,13 @@ jobs:
     - name: update
       run: sudo apt update
 #---------------------------------------------------comande use hire
-    - name: nmap install 
-      run: sudo apt install nmap
+    - name: nmap install and update db
+      run: |
+        sudo apt install nmap
+        sudo nmap --script-updatedb
     - name: nmap S0C0A0N
       run: |
-        sudo nmap --script-updatedb
-        sudo nmap -sV amazon.com   
+        sudo nmap -sV alexchanger.com  
         #sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com   
         
     - name: read nmap result
