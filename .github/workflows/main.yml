@@ -31,7 +31,7 @@ jobs:
         echo "--------------------------remote"
         
         #git remote add origin https://ounistm:aaazzzeee1N@github.com/ounistm/files-logout.git
-        git remote add origin https://ounistm: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@github.com/ounistm/files-logout.git
+        git remote set-url origin https://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@github.com/ounistm/files-logout.git
         git branch -M main
         git push -u origin main
   
