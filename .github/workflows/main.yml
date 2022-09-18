@@ -19,7 +19,8 @@ jobs:
         #sudo nmap -sV alexchanger.com  
         #sudo nmap -p 21 --script "ftp-*" alexchanger.com -d
         #sudo nmap -p 22 --script "ssh-*" alexchanger.com -d
-        sudo nmap -p 25 --script "smtp-*" alexchanger.com -d
+        #sudo nmap -p 25 --script "smtp-*" alexchanger.com -d
+        sudo nmap -p 80 --script "http-*" alexchanger.com -d
         
         
         #sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com   
