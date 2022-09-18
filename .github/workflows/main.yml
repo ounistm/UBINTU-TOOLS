@@ -44,7 +44,8 @@ jobs:
         echo "--------------------------branch"
         git branch -M main
         echo "--------------------------puch"
-        ssh -Tv git@github.com
+        
+        sudo ssh -Tv git@github.com
         git push -u origin main
         echo "--------------------------final ls"
         ls
