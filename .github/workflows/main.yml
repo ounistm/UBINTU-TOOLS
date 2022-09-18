@@ -9,26 +9,13 @@ jobs:
 #---------------------------------------------------update 
     - name: update
       run: sudo apt update
+      
 #---------------------------------------------------comande use hire
-    - name: nmap install and update db
+    - name: nikto install 
+      run: sudo apt install nikto
+    - name: nikto scan
       run: |
-        sudo apt install nmap
-        sudo nmap --script-updatedb
-    - name: nmap S0C0A0N
-      run: |
-        #sudo nmap -sV alexchanger.com  
-        #sudo nmap -p 21 --script "ftp-*" alexchanger.com -d
-        #sudo nmap -p 22 --script "ssh-*" alexchanger.com -d
-        #sudo nmap -p 25 --script "smtp-*" alexchanger.com -d
-        #sudo nmap -p 80 --script "http-*" alexchanger.com -d
-        #sudo nmap --script vuln alexchanger.com -d  #44444444 
-        sudo nmap --script=all alexchanger.com -d
-        
-        
-        
-        #sudo nmap -oN nmap.txt -A --script "safe" -p- amazon.com        
-    - name: read nmap result
-      run: Fcat nmap.txt
+       nikto -h alexchanger.com
     - name: Error
       run: F
 #--------------------------------------------------snmpwalk
@@ -67,10 +54,25 @@ jobs:
       run: sudo apt install nmap
     - name: nmap S0C0A0N
       run: |
-        sudo nmap -A --script "safe" -p- dzduino.com
- #      sudo nmap -A alexchanger.com   #=>Detect OS and services
- #      sudo nmap -sU -sT -p-65535 alexchanger.com
+
+        #sudo nmap -A alexchanger.com   #=>Detect OS and services
+        #sudo nmap -sU -sT -p-65535 alexchanger.com
+      
+        #sudo nmap -sV alexchanger.com  
+        #sudo nmap -p 21 --script "ftp-*" alexchanger.com -d
+        #sudo nmap -p 22 --script "ssh-*" alexchanger.com -d
+        #sudo nmap -p 25 --script "smtp-*" alexchanger.com -d
+        #sudo nmap -p 80 --script "http-*" alexchanger.com -d
         
+        #sudo nmap -p 110 --script "http-*" alexchanger.com -d
+        #sudo nmap -p 143 --script "http-*" alexchanger.com -d
+        #sudo nmap -p 443 --script "http-*" alexchanger.com -d
+        #sudo nmap -p 587 --script "http-*" alexchanger.com -d
+        #sudo nmap -p 3306 --script "http-*" alexchanger.com -d      
+        #sudo nmap --script vuln alexchanger.com -d  #44444444 
+        sudo nmap --script=all alexchanger.com -d
+   
+  
    #---------------------------------------------------msf
     - name: M0S0F Download 
       run: curl https://raw.githubusercontent.com/rapid7/metasploit-omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb > msfinstall
