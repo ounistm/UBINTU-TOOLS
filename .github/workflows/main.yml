@@ -31,14 +31,14 @@ jobs:
         cd files-logout
         echo "-------------------------- ls -a"
         ls -a
-        echo "--------------------------init"
+        #echo "--------------------------init"
         #git init
         echo "--------------------------add file"
         cat > myfile.txt
         echo "-------------------------- ls -a"
         ls -a
         echo "--------------------------remot"
-        git remote set-url origin https://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@github.com/ounistm/files-logout.git
+        git remote add origin https://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@github.com/ounistm/files-logout.git
         echo "--------------------------git add myfile.txt"
         git add myfile.txt
         echo "--------------------------commit"
@@ -46,8 +46,6 @@ jobs:
         echo "--------------------------branch"
         git branch -M main
         echo "--------------------------puch"
-        ls
-        
         git push -u origin main
         echo "--------------------------final ls"
         ls
