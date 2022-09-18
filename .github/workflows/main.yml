@@ -21,8 +21,8 @@ jobs:
         #sudo nmap -p 22 --script "ssh-*" alexchanger.com -d
         #sudo nmap -p 25 --script "smtp-*" alexchanger.com -d
         #sudo nmap -p 80 --script "http-*" alexchanger.com -d
-        #sudo nmap --script vuln alexchanger.com -d  #44444444
-        sudo nmap -sC vuln alexchanger.com -d
+        #sudo nmap --script vuln alexchanger.com -d  #44444444 
+        sudo nmap --script=all alexchanger.com -d
         
         
         
