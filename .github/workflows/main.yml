@@ -41,8 +41,9 @@ jobs:
         git add myfile.txt
         echo "--------------------------commit"
         git commit -m "TEST"
-        echo "--------------------------puch"
+        echo "--------------------------branch"
         git branch -M main
+        echo "--------------------------puch"
         git push -u origin main
         echo "--------------------------final ls"
         ls
